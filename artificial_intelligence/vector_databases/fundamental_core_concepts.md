@@ -32,7 +32,9 @@ v = [0.2, 0.7, -0.1]
 
 is a 3-dimensional vector.
 
-genui{"learning_viz":{"type_id":"VECTOR_COMPONENTS","initial_values":{"magnitude":6,"angleDeg":35}}}
+
+<img width="768" height="379" alt="image" src="https://github.com/user-attachments/assets/f65c0440-fa83-4622-872a-5bcf739f5626" />
+
 
 In traditional mathematics, vectors can represent things like:
 
@@ -430,7 +432,7 @@ Let's go through them.
 
 Cosine similarity measures the **angle between two vectors**.
 
-genui{"learning_viz":{"type_id":"VECTOR_DOT_PRODUCT"}}
+<img width="768" height="410" alt="image" src="https://github.com/user-attachments/assets/964ab4a6-3c4b-42a1-b525-3df041941210" />
 
 The formula is:
 
