@@ -1,22 +1,21 @@
-- nodes
-        
-edges
-reducers
-messages
-checkpoints
-persistence
-interrupts
-human-in-the-loop
-parallel execution
-subgraphs
-memory
-streaming
-stateful agents
+- nodes       
+- edges
+- reducers
+- messages
+- checkpoints
+- persistence
+- interrupts
+- human-in-the-loop
+- parallel execution
+- subgraphs
+- memory
+- streaming
+- stateful agents
 
 
-graph state.
-State Schema
-State is the complete graph data. A node return value is usually a state update.
+- graph state.
+- state Schema
+- State is the complete graph data. A node return value is usually a state update.
 TypedDict gives you a type contract.
 class State(TypedDict):
     user_query: str
@@ -43,10 +42,29 @@ This is why reducers are not merely a syntactic feature.
 
 They define concurrency semantics for state.
 
-State Channels
-This is a deeper LangGraph concept.
-You can think of each state key as having its own channel.
+## State Channels :
+- This is a deeper LangGraph concept.
+- You can think of each state key as having its own channel.
 
-Messages are not just arbitrary strings. They have IDs, roles, tool calls, tool results, metadata, etc.
-State Lifecycle
+## Messages :
+- Messages are not just arbitrary strings. They have IDs, roles, tool calls, tool results, metadata, etc.
 
+## State Lifecycle
+
+
+
+#### CheckPointer
+
+- checkpoint writes
+- concurrency
+- thread isolation
+- resume
+- interrupt/resume
+- replay
+- pending writes
+- failure recovery
+- serialization
+- transactions
+- schema migrations
+- performance
+- TTL/retention

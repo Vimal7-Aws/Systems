@@ -2802,3 +2802,6 @@ Production Agent Architecture
 ```
 
 **For your LangGraph architect roadmap, I would consider Persistence & Checkpointing one of the core topics alongside State/Reducers, Parallel Execution, Subgraphs, and HITL.** The next natural topic after this is **PART 12 — Human-in-the-Loop & Interrupts**, because HITL is where checkpointing becomes practically indispensable.
+
+
+
