@@ -139,3 +139,16 @@ Key checkpointer responsibilities:
 - **replay** — re-run a graph from any prior checkpoint
 - **failure recovery** — restart from the last successful checkpoint
 - **serialization** — marshal Python objects to/from storage
+
+
+
+## Circuit Breaker
+- concurrent requests
+- async code
+- thread/process safety
+- distributed instances
+- metrics
+- half-open request limits
+- failure classification
+- timeouts
+- observability
