@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74527f2c-2ae9-43d0-9730-ab7f8a43de8e" name="Changes" comment="" />
+    <list default="true" id="74527f2c-2ae9-43d0-9730-ab7f8a43de8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/artificial_intelligence/lang_graph/agentic_terms.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artificial_intelligence/lang_graph/react_loop.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
