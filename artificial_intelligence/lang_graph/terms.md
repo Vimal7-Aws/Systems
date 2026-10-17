@@ -152,3 +152,50 @@ Key checkpointer responsibilities:
 - failure classification
 - timeouts
 - observability
+
+
+
+
+Failures:
+- Vector database timeout
+- Permission failure
+- Embedding service failure
+- Tool execution failure
+- External API timeout
+- LangGraph checkpoint failure
+- Model call failure
+- LLM RateLimitException
+
+
+Side effects:
+- External reads    
+- Metrics and tracing
+- Async streaming
+
+
+Well-defined node contracts make it easier to:
+- Unit-test nodes independently.
+- Replace a vector database without rewriting answer generation.
+- Apply different retry policies to different operations.
+- Trace failures to the exact stage.
+- Limit which state fields a component can modify.
+- Enforce tenant isolation and access-control boundaries.
+- Reuse components across multiple graphs.
+
+
+Node functions: what can a node receive?
+In Python LangGraph, a node can accept more than just state. Common inputs include:
+- state — the current graph state.
+- config — run configuration, including configurable values and tracing metadata.
+- runtime — runtime context and services, such as application context or a store.
+
+
+from langgraph.types import Send
+def dispatch_research(state: ResearchState):
+    return [
+        Send(
+            "research_worker",
+            {"subquery": subquery},
+        )
+        for subquery in state["subqueries"]
+    ]
